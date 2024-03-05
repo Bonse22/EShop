@@ -1,5 +1,5 @@
 ﻿
-namespace EShop.Modelsnamespace 
+namespace EShop.Models 
 {
         public class Cart
 {
@@ -27,8 +27,8 @@ namespace EShop.Models
     public class ProductModel
     {
         public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
+        public string ProductName { get; set; } = "";
+        public string? ProductDescription { get; set; }
         public int Stock { get; set; }
         public double Price { get; set; }
     }
@@ -39,11 +39,11 @@ namespace EShop.Models
     public class CustomerModel
     {
         public int CustomerId { get; set; }
-        public string CustomerName { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
+        public string? CustomerName { get; set; }
+        public string Email { get; set; } = "";
+        public string Phone { get; set; } = "";
         public DateTime DateOfBirth { get; set; }
-        public string Address { get; set; }
+        public string Address { get; set; } = "";
 
         public override bool Equals(object? obj)
         {
