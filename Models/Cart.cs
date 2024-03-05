@@ -1,14 +1,14 @@
 ﻿
-namespace EShop.Modelsnamespace EShop.Models
+namespace EShop.Modelsnamespace 
 {
         public class Cart
-        {
-            public int CartId { get; set; }
-            public int ProductId { get; set; }
-            public int CustomerId { get; set; }
-            public int Quantity { get; set; }
-        }
-    }
+{
+    public int CartId { get; set; }
+    public int ProductId { get; set; }
+    public int CustomerId { get; set; }
+    public int Quantity { get; set; }
+}
+}
 
 namespace EShop.Models
 {
@@ -35,15 +35,15 @@ namespace EShop.Models
 }
 
 namespace EShop.Models
+{
+    public class CustomerModel
     {
-        public class CustomerModel
-        {
-            public int CustomerId { get; set; }
-            public string CustomerName { get; set; }
-            public string Email { get; set; }
-            public string Phone { get; set; }
-            public DateTime DateOfBirth { get; set; }
-            public string Address { get; set; }
+        public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string Address { get; set; }
 
         public override bool Equals(object? obj)
         {
@@ -60,6 +60,6 @@ namespace EShop.Models
             return base.ToString();
         }
     }
-    }
+}
 
 
